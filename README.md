@@ -1,9 +1,11 @@
+```
 ███████╗██╗██╗     ███████╗██████╗ ██╗ ██████╗ ███████╗███████╗████████╗
 ██╔════╝██║██║     ██╔════╝██╔══██╗██║██╔════╝ ██╔════╝██╔════╝╚══██╔══╝
 █████╗  ██║██║     █████╗  ██║  ██║██║██║  ███╗█████╗  ███████╗   ██║   
 ██╔══╝  ██║██║     ██╔══╝  ██║  ██║██║██║   ██║██╔══╝  ╚════██║   ██║   
 ██║     ██║███████╗███████╗██████╔╝██║╚██████╔╝███████╗███████║   ██║   
 ╚═╝     ╚═╝╚══════╝╚══════╝╚═════╝ ╚═╝ ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
+```
 
 # 🖇️ FileDigest – Multithreaded CLI with TUI
 
@@ -55,7 +57,7 @@ The general flow of the application:
 
 ## ⚙️ CLI Usage
 
-```bash
+
 file-hasher [OPTIONS] <inputs>...
 
 Options
@@ -76,7 +78,7 @@ file-hasher ./my_folder -r -t 4
 
 ⸻
 
-🧩 Code Structure
+## 🧩 Code Structure
 
 src/
 ├── main.rs         # Entry point, CLI parsing & TUI loop
@@ -93,7 +95,7 @@ src/
 
 ⸻
 
-🧪 Running Tests
+## 🧪 Running Tests
 	•	Unit tests: Run all internal module tests
 
 cargo test
@@ -106,7 +108,7 @@ cargo test --test integration_tests
 
 ⸻
 
-🔧 Dependencies
+## 🔧 Dependencies
 	•	blake3￼ – Fast cryptographic hashing
 	•	crossbeam_channel￼ – Multithreaded communication
 	•	walkdir￼ – Recursive directory traversal
@@ -118,7 +120,7 @@ cargo test --test integration_tests
 
 ⸻
 
-🧭 Next Steps / TODO
+## 🧭 Next Steps / TODO
 	•	Add hash verification or checksum output to file
 	•	Support other hash algorithms (SHA-256, SHA-512)
 	•	Export TUI results to CSV or JSON
