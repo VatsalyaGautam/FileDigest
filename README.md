@@ -14,7 +14,7 @@ FileDigest is a powerful file hashing tool written in Rust that makes computing 
 
 ⸻
 
-# 📌 Key Features
+## 📌 Key Features
 	•	⚡ Parallel hashing using worker threads
 	•	🗂️ Recursive directory traversal (optional)
 	•	🖥️ Live TUI showing Pending → Working → Done/Error
@@ -26,13 +26,13 @@ FileDigest is a powerful file hashing tool written in Rust that makes computing 
 
 ⸻
 
-# 🏗️ High-Level Architecture
+## 🏗️ High-Level Architecture
 
 ![Architecture Diagram](docs/flow_diagram.png)
 
 ⸻
 
-# 🔄 Code Flow Explained
+## 🔄 Code Flow Explained
 
 Here's what happens behind the scenes when you run the program:
 
@@ -128,7 +128,7 @@ And you're done!
 
 ⸻
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -144,7 +144,7 @@ src/
 
 ⸻
 
-# 🧠 Module Responsibilities (What Each Part Does)
+## 🧠 Module Responsibilities (What Each Part Does)
 
 ### main.rs
 	•	Reads and interprets your command-line input
@@ -265,7 +265,7 @@ Integration tests use tempfile to avoid touching real filesystem.
 
 ⸻
 
-# 🚀 Future Improvements
+## 🚀 Future Improvements
 	•	Output results into JSON/CSV
 	•	Support SHA-256, SHA-512
 	•	Hash verification mode
