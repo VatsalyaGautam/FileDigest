@@ -4,27 +4,17 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# CLI
+
 clap = { version = "4", features = ["derive"] }
-
-# TUI
-ratatui = "0.23"        # adjust to latest if needed
-crossterm = "0.26"      # backend for ratatui
-
-# Hashing
+ratatui = "0.23"        
+crossterm = "0.26"      
 blake3 = "1.4"
-
-# File walking
 walkdir = "2.3"
 
-# Concurrency helpers
 crossbeam-channel = "0.5"
 
-# Error handling
 thiserror = "1.0"
 anyhow = "1.0"          # for ergonomic top-level errors
-
-# Optional: nicer progress in log output (not used directly in TUI)
 log = "0.4"
 env_logger = "0.10"
 

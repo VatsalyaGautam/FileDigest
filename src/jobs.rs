@@ -1,4 +1,4 @@
-    use crossbeam_channel::{unbounded, Receiver};
+use crossbeam_channel::{unbounded, Receiver};
 use std::path::{ PathBuf};
 use std::thread;
 use std::time::Instant;
@@ -50,7 +50,7 @@ pub fn collect_paths(path: &PathBuf, recursive: bool) -> anyhow::Result<Vec<Path
         .filter(|e| e.file_type().is_file())
         .map(|e| e.path().to_path_buf())
         .collect();
-
+    
     Ok(files)
 }
 

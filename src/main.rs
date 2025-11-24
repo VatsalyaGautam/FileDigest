@@ -8,7 +8,6 @@ mod utils;
 use crate::cli::Cli;
 use crate::jobs::{run_workers, FileRecord};
 use crate::tui::run_tui;
-
 use clap::Parser;
 
 fn main() -> anyhow::Result<()> {
@@ -16,10 +15,7 @@ fn main() -> anyhow::Result<()> {
 
     let cli = Cli::parse(); //.
 
-    if cli.threads == 0 {
-        eprintln!("threads must be >= 1");
-        std::process::exit(2);
-    }
+    cli.validate()?;
 
     // Collect files
     let mut files = Vec::new();
