@@ -15,6 +15,7 @@ FileDigest is a powerful file hashing tool written in Rust that makes computing 
 ⸻
 
 ## 📌 Key Features
+
 	•	⚡ Parallel hashing using worker threads
 	•	🗂️ Recursive directory traversal (optional)
 	•	🖥️ Live TUI showing Pending → Working → Done/Error
