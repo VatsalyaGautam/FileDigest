@@ -182,19 +182,64 @@ src/
 
 ⸻
 
-## ⚙️ Usage
+## 🚀 Getting Started
+
+Want to try it out? Here's how to get FileDigest running on your machine:
+
+### 1. Clone the Repository
+
+First, grab a copy of the project:
+
+```bash
+git clone https://github.com/yourusername/filedigest.git
+cd filedigest
+```
+
+Or if you want to make your own modifications, fork it first on GitHub and then clone your fork.
+
+### 2. Create a Test File
+
+Let's create a simple test file in the project directory:
+
+```bash
+echo "Hello, FileDigest!" > myfile.txt
+```
+
+### 3. Run It!
+
+Now you can hash your file using cargo:
+
+```bash
+cargo run -- myfile.txt
+```
+
+That's it! You'll see the live terminal interface showing your file being processed and its hash being computed.
+
+⸻
+
+## ⚙️ Usage Examples
+
+Once you've built the project, here are different ways to use it:
 
 ### Hash a single file
 
+cargo run -- ./example.txt
+
+Or if you've installed it:
+
 filedigest ./example.txt
 
-### Use 4 threads
+### Hash a folder with 4 threads
 
-filedigest ./folder -t 4
+cargo run -- ./folder -t 4
 
-### Disable recursion
+### Hash without going into subdirectories
 
-filedigest ./folder --no-recursive
+cargo run -- ./folder --no-recursive
+
+### Hash multiple files at once
+
+cargo run -- file1.txt file2.txt folder/
 
 
 ⸻
